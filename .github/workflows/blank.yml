@@ -4,7 +4,9 @@ on:
 jobs:
   RunOneScript:
     runs-on: ubuntu-latest
+    
     steps:
+      - uses: actions/setup-node@v4.0.2
       - uses: actions/checkout@v3
       - uses: otymko/setup-onescript@v1.4
         with:
