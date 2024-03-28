@@ -4,17 +4,17 @@ on:
 jobs:
   RunOneScript:
     runs-on: ubuntu-latest  
-    runs:
-      using: 'node20'
-      main: 'main.js'
-      steps:
+      runs:
+        using: 'node20'
+        main: 'main.js'
+        steps:
 
-      - uses: actions/checkout@v3
-      - uses: otymko/setup-onescript@v1.4
-        with:
-          version: 1.9.0 
+          - uses: actions/checkout@v3
+          - uses: otymko/setup-onescript@v1.4
+            with:
+              version: 1.9.0 
           
-      - name: Запускаем OneScript
-        run:  opm update 
-            opm install -all
-            oscript ./executionScript.bsl
+          - name: Запускаем OneScript
+            run:  opm update 
+              opm install -all
+              oscript ./executionScript.bsl
