@@ -13,4 +13,4 @@ jobs:
           
       - name: Запускаем OneScript
         run: opm install -all
-        run: oscript ./executionScript.bsl
+            oscript ./executionScript.bsl
