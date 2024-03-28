@@ -12,5 +12,6 @@ jobs:
           version: 1.9.0 
           
       - name: Запускаем OneScript
-        run: opm install -all
+        run:  opm update 
+            opm install -all
             oscript ./executionScript.bsl
