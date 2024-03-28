@@ -11,7 +11,8 @@ jobs:
       - uses: otymko/setup-onescript@v1.4
         with:
           version: 1.9.0
-
+          
       - name: Запускаем OneScript
-      - run: opm install -all
-      - run: oscript ./executionScript.bsl
+        run: |
+          opm install -all
+          oscript ./executionScript.bsl
