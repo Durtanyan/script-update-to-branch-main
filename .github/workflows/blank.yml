@@ -14,5 +14,5 @@ jobs:
           
       - name: Запускаем OneScript
         run: |
-          opm install -all
+          opm install messenger
           oscript ./executionScript.bsl
