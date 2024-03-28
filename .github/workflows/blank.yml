@@ -13,4 +13,4 @@ jobs:
           version: 1.9.0
 
       - name: Запускаем OneScript
-        run: oscript ../../executionscript.bsl
+        run: oscript ../../../executionscript.bsl
