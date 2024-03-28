@@ -1,4 +1,4 @@
 git merge
 git diff HEAD^ HEAD --name-status > .\diff.txt
 oscript.exe "normalize.os"
-.\"load files to base.bat"
+./"load files to base.bat"
